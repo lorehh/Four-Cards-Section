@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.green {
+    background-color: white;
+}
+
+.red {
+    background-color: white;
+}
+
+.yellow {
+    background-color: white;
+}
+
+.blue {
+    background-color: white;
+}
+
+@media screen and (min-width: 981px) {
+    .container {
+        margin-top: 3%;
+    }
+    .header {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .header h1 span {
+        font-weight: 400;
+    }
+
+    .header h1 {
+        color: hsl(234, 12%, 34%);
+        margin-bottom: 2%;
+    }
+
+    .header p {
+        margin-bottom: 20%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 100px;
+        gap: 35px;
+    }
+
+    .cards div {
+        max-width: 350px;
+        height: 250px;
+        margin: auto;
+        position: relative;
+    }
+
+    .cards .green {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        transform: translate(0px, 150px);
+    }
+    
+    .cards .red {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .cards .yellow {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .cards .blue {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        transform: translate(0px, 150px);
+    }
+
+    .cards p {
+        margin-bottom: 10%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards h2 {
+        color: hsl(234, 12%, 34%);
+    }
+
+    .cards img {
+        float: right;
+        margin: 1%;
+    }
+
+    .green {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        border-radius: 3%;
+        padding: 5%;
+    }
+
+    .red {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        border-radius: 3%;
+        padding: 5%;
+    }
+
+    .yellow {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        border-radius: 3%;
+        padding: 5%;
+    }
+
+    .blue {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        border-radius: 3%;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 426px) {
+    .container {
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
+    .header {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .cards {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .header h1 span {
+        font-weight: 400;
+    }
+
+    .header h1 {
+        color: hsl(234, 12%, 34%);
+        font-size: 24px;
+        margin-bottom: 5%;
+    }
+
+    .header p {
+        margin-bottom: 20%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards p {
+        margin-bottom: 10%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards h2 {
+        color: hsl(234, 12%, 34%);
+    }
+
+    .cards img {
+        float: right;
+        margin: 1%;
+    }
+
+    .green {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .red {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .yellow {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .blue {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
+    .header {
+        margin: 7%;
+        text-align: center;
+    }
+
+    .cards {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .header h1 span {
+        font-weight: 400;
+    }
+
+    .header h1 {
+        color: hsl(234, 12%, 34%);
+        font-size: 24px;
+        margin-bottom: 5%;
+    }
+
+    .header p {
+        margin-bottom: 20%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards p {
+        margin-bottom: 10%;
+        color: hsl(229, 6%, 66%);
+        font-size: 15px;
+    }
+
+    .cards h2 {
+        color: hsl(234, 12%, 34%);
+    }
+
+    .cards img {
+        float: right;
+        margin: 1%;
+    }
+
+    .green {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .red {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .yellow {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    .blue {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        box-shadow: 0px 5px 10px 1px hsla(229, 6%, 66%, 0.242);
+        height: 250px;
+        border-radius: 3%;
+        margin: 3%;
+        padding: 9%;
+        padding-top: 7%;
+        margin-bottom: 8%;
+    }
+}
